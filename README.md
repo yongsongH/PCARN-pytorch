@@ -13,6 +13,26 @@ Namhyuk Ahn, Byungkon Kang, Kyung-Ah Sohn. [[arXiv](https://arxiv.org/abs/1903.0
 ## Dataset
 We use the same protocols of CARN, our prior work. Please see the details on this [repo](https://github.com/nmhkahn/CARN-pytorch#dataset).
 
+
+1. Download [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K) and unzip on `dataset` directory as below:
+  ```
+  dataset
+  └── DIV2K
+      ├── DIV2K_train_HR
+      ├── DIV2K_train_LR_bicubic
+      ├── DIV2K_valid_HR
+      └── DIV2K_valid_LR_bicubic
+ ```    
+ 🙌 Download [MURA](https://figshare.com/articles/dataset/Rethinking_Degradation_Radiograph_Super-Resolution_via_AID-SRGAN_Dataset_/20418036/3) and unzip on `dataset` directory as below (x4):
+  ```
+  dataset
+  └── MURA
+      ├── MURA_SR_GT
+      ├── MURA_mini_X4
+      ├── MURA_Test_HR
+      └── MURA_LR_X4
+  ```
+
 ## Test models on given directory
 To test on given image directory,
 ```shell
